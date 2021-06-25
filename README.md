@@ -9,6 +9,7 @@
 ### Baixando e executando projeto
 
 - Clone o projeto a partir do Github
+  - [Clique_Aqui](https://docs.github.com/pt/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository) para saber como clonar.
 - Abra o arquivo index.html no seu navegador
 - Para adcionar um novo funcionario você deve indicar os dados: nome, cpf, salario, desconto previdencia e quantidade de dependentes. Em seguida clicar no botão adicionar.
   - Caso deixe algum campo em branco, apresentará uma mensagem de campo obrigatório.
