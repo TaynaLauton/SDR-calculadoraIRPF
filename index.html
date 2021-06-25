@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora Imposto de Renda</title>
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="content">
+    <header>
+      <h1 class="titulo">Calculadora Imposto de Renda</h1>
+    </header>
+    <main>
+      <section class="conteiner">
+        <h2 id="titulo-tabela">Funcionarios</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>CPF</th>
+              <th>Salário</th>
+              <th>Desconto</th>
+              <th>Dependentes</th>
+              <th>Desconto IRPF</th>
+            </tr>
+          </thead>
+          <tbody id="tabela-funcionarios">
+            <tr class="funcionario">
+              <td class="info-nome">Letícia Aurora Farias</td>
+              <td class="info-cpf">936.938.039-60</td>
+              <td class="info-salario">998</td>
+              <td class="info-desconto">74.85</td>
+              <td class="info-dependentes">2</td>
+              <td class="info-irpf"></td>
+            </tr>
+            <tr class="funcionario">
+              <td class="info-nome">Edson Thiago Drumond</td>
+              <td class="info-cpf">748.517.476-24</td>
+              <td class="info-salario">1045</td>
+              <td class="info-desconto">78.38</td>
+              <td class="info-dependentes">1</td>
+              <td class="info-irpf"></td>
+            </tr>
+            <tr class="funcionario">
+              <td class="info-nome">Fátima Elza Tereza Castro</td>
+              <td class="info-cpf">701.118.872-08</td>
+              <td class="info-salario">5500</td>
+              <td class="info-desconto">628.95</td>
+              <td class="info-dependentes">0</td>
+              <td class="info-irpf"></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="container">
+        <h2 id="titulo-form">Adicionar novo funcionario</h2>
+        <ul id="mensagens-erro"></ul>
+        <form id="form-adiciona">
+            <div class="grupo1">
+                <label class="sr-only" for="nome">Nome:</label>
+                <input id="nome" name="nome" type="text" placeholder="digite o nome do funcionario">
+                <label class="sr-only" for="cpf">CPF</label>
+                <input class="campo-medio" id="cpf" name="cpf" type="text" placeholder="digite o CPF">
+            </div>
+            <div class="grupo1">
+              <label class="sr-only" for="salario">Salário</label>
+              <input  id="salario" name="salario" type="text" placeholder="digite o salario">
+              <label class="sr-only" for="desconto">Desconto Previdencia</label>
+              <input id="desconto" name="desconto" type="text" placeholder="Desconto Previdencia">
+              <label class="sr-only" for="dependentes">Dependentes</label>
+              <input id="dependentes" name="dependentes" type="text" placeholder="Quantidade dependentes">
+            </div>
+    
+            <button id="adicionar-funcionario" class=".button">Adicionar</button>
+        </form>
+    </section>
+    </main>
+  </div>
+  <script src="js/calculairpf.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/remover-funcionario.js"></script>
+</body>
+</html>

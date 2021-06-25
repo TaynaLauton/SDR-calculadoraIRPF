@@ -1,0 +1,79 @@
+.container{
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 10rem;
+}
+
+section h2{
+  font-size: 2em;
+  display: flex;
+  padding: .5em;
+  border-bottom: 1px solid var(--grey-dark);
+  align-items: center;
+  justify-content: center;
+}
+
+#titulo-tabela{
+  border: none;
+  font-weight: 700;
+  padding-bottom: 5rem;
+}
+
+table{
+  margin-left: auto;
+  margin-right: auto;
+  table-layout: fixed;
+}
+
+td, th {
+  padding: .7em;
+  margin: 0;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+th{
+  font-weight: 700;
+  background-color: var(--light-blue);
+}
+
+input{
+  outline: none;
+  margin: 0.6rem;
+  border: 1px solid #ccc;
+  padding: .7em;
+  width: 100%;
+}
+
+.campo-medio{
+  width: 30%;
+}
+
+.grupo1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3rem;
+}
+
+button:active{
+  margin-top:0px;
+  border: 0;
+}
+
+button[disabled=disabled], button:disabled {
+  background-color: var(--grey-ligth);
+  border-color: var(--grey-dark);
+
+}
+
+.adicionar-funcionario{
+    margin-top: 30px;
+}
+
+#mensagens-erro {
+  color: var(--grey-medium);
+  background: var(--red);
+  width: 35rem;
+}
