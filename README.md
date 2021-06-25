@@ -2,6 +2,9 @@
 
 ## Descrição do Projeto
 <p align="justify"> Aplicação web que permite gerenciar funcionários e o cálculo de imposto de renda retido da fonte(IRRF) de cada um deles. </p>
+<p align="center">
+  <img src="assets/Screenshot_4.png">
+</p>
 
 ### Baixando e executando projeto
 
