@@ -13,8 +13,11 @@
 - Abra o arquivo index.html no seu navegador
 - Para adcionar um novo funcionario você deve indicar os dados: nome, cpf, salario, desconto previdencia e quantidade de dependentes. Em seguida clicar no botão adicionar.
   - Caso deixe algum campo em branco, apresentará uma mensagem de campo obrigatório.
-- Para exclusão de um cadastro, deve ser dado boubleclick na linha que corresponde ao cadastro.
-![excluircadastro](https://user-images.githubusercontent.com/47996115/123437234-d41e2e80-d5a5-11eb-93b0-0d31c461b281.gif)
+- Para exclusão de um cadastro, deve selecionar no checkbox  que corresponde ao cadastro, na coluna selecione. E em seguida clicar em Excluir selecionado.
+<p align="center">
+  <img src="assets/Screenshot_5.png">
+</p>
+
 
 
 ### Features

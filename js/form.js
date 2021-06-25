@@ -42,6 +42,7 @@ function montaTr(funcionario) {
     var funcionarioTr = document.createElement("tr");
     funcionarioTr.classList.add("funcionario");
 
+    funcionarioTr.appendChild(montaTdInput());
     funcionarioTr.appendChild(montaTd(funcionario.nome, "info-nome"));
     funcionarioTr.appendChild(montaTd(funcionario.cpf, "info-cpf"));
     funcionarioTr.appendChild(montaTd(funcionario.salario, "info-salario"));
@@ -50,6 +51,18 @@ function montaTr(funcionario) {
     funcionarioTr.appendChild(montaTd(funcionario.irpf, "info-irpf"));
 
     return funcionarioTr;
+}
+
+function montaTdInput(){
+  var td = document.createElement('td');
+  var input = document.createElement("input");
+  input.setAttribute("type", "checkbox");
+  input.setAttribute("name", "select");
+  input.setAttribute("id", "select");
+  input.setAttribute("class", "select-checkbox")
+  td.appendChild(input);
+
+  return td;
 }
 
 function montaTd(dado, classe) {

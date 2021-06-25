@@ -1,12 +1,6 @@
-var funcionarios = document.querySelectorAll(".funcionario");
-
-var tabela = document.querySelector("#tabela-funcionarios");
-
-tabela.addEventListener("dblclick", function(event) {
-    event.target.parentNode.classList.add("fadeOut");
-
-    setTimeout(function() {
-        event.target.parentNode.remove();
-    }, 500);
-
-});
+function apagarSelecionados() {
+  var $selecionados = document.querySelectorAll('td [type="checkbox"]:checked') 
+  for(let i = 0; i < $selecionados.length; i++) {
+      $selecionados[i].parentNode.parentNode.remove() 
+  }
+}

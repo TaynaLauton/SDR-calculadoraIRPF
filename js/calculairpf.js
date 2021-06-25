@@ -17,27 +17,27 @@ for(var i = 0; i < funcionarios.length ; i++){
 
   if(salBaseIr <= 1903.98){
     var irpf = 0;
-    descIrpf.textContent = irpf.toFixed(2);
+    foo(descIrpf, irpf)
   }
 
   if(salBaseIr >= 1903.99 && salBaseIr <= 2826.65){
     var irpf = ((salBaseIr * 7.5)/100) - 142.80;
-    descIrpf.textContent = irpf.toFixed(2);
+    foo(descIrpf, irpf)
   }
 
   if(salBaseIr >= 2826.66 && salBaseIr <= 3751.05){
     var irpf = ((salBaseIr * 15)/100) - 354.80;
-    descIrpf.textContent = irpf.toFixed(2);
+    foo(descIrpf, irpf)
   }
 
   if(salBaseIr >= 3751.06 && salBaseIr <= 4664.68){
     var irpf = ((salBaseIr * 22.5)/100) - 636.13;
-    descIrpf.textContent = irpf.toFixed(2);
+    foo(descIrpf, irpf)
   }
 
   if(salBaseIr > 4664.68){
     var irpf = ((salBaseIr*27.5)/100) - 869.36;
-    descIrpf.textContent = irpf.toFixed(2);
+    foo(descIrpf, irpf)
   }   
 }
 
@@ -75,4 +75,9 @@ function validaAliquota(salBaseIr){
     return irpf.toFixed(2);
   }  
 
+}
+
+/**Função que fixa o desconto em 2 casas decimais */
+function foo(descIrpf, val) {
+ descIrpf.textContent = val.toFixed(2)
 }

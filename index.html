@@ -23,6 +23,7 @@
         <table>
           <thead>
             <tr>
+              <th>Selecione</th>
               <th>Nome</th>
               <th>CPF</th>
               <th>Salário</th>
@@ -33,6 +34,7 @@
           </thead>
           <tbody id="tabela-funcionarios">
             <tr class="funcionario">
+              <td><input class="select-checkbox" type="checkbox" name="select" id="select"></td>
               <td class="info-nome">Letícia Aurora Farias</td>
               <td class="info-cpf">936.938.039-60</td>
               <td class="info-salario">998</td>
@@ -41,6 +43,7 @@
               <td class="info-irpf"></td>
             </tr>
             <tr class="funcionario">
+              <td><input class="select-checkbox" type="checkbox" name="select" id="select"></td>
               <td class="info-nome">Edson Thiago Drumond</td>
               <td class="info-cpf">748.517.476-24</td>
               <td class="info-salario">1045</td>
@@ -49,6 +52,7 @@
               <td class="info-irpf"></td>
             </tr>
             <tr class="funcionario">
+              <td><input class="select-checkbox" type="checkbox" name="select" id="select"></td>
               <td class="info-nome">Fátima Elza Tereza Castro</td>
               <td class="info-cpf">701.118.872-08</td>
               <td class="info-salario">5500</td>
@@ -58,6 +62,7 @@
             </tr>
           </tbody>
         </table>
+        <button id="excluir-funcionario"class="button excluir" onclick="(apagarSelecionados())">Excluir selecionado</button>
       </section>
       <section class="container">
         <h2 id="titulo-form">Adicionar novo funcionario</h2>
@@ -65,17 +70,17 @@
         <form id="form-adiciona">
             <div class="grupo1">
                 <label class="sr-only" for="nome">Nome:</label>
-                <input id="nome" name="nome" type="text" placeholder="Digite o nome completo do funcionario">
+                <input class="input-form" id="nome" name="nome" type="text" placeholder="Digite o nome completo do funcionario">
                 <label class="sr-only" for="cpf">CPF</label>
-                <input class="campo-medio" id="cpf" name="cpf" type="text" placeholder="Digite o CPF">
+                <input class="campo-medio input-form" id="cpf" name="cpf" type="text" placeholder="Digite o CPF">
             </div>
             <div class="grupo1">
               <label class="sr-only" for="salario">Salário</label>
-              <input  id="salario" name="salario" type="text" placeholder="Digite o salario">
+              <input class="input-form" id="salario" name="salario" type="text" placeholder="Digite o salario">
               <label class="sr-only" for="desconto">Desconto Previdencia</label>
-              <input id="desconto" name="desconto" type="text" placeholder="Digite o desconto previdencia">
+              <input class="input-form" id="desconto" name="desconto" type="text" placeholder="Digite o desconto previdencia">
               <label class="sr-only" for="dependentes">Dependentes</label>
-              <input id="dependentes" name="dependentes" type="text" placeholder="Digite a quantidade de dependentes">
+              <input class="input-form" id="dependentes" name="dependentes" type="text" placeholder="Digite a quantidade de dependentes">
             </div>
     
             <button id="adicionar-funcionario" class=".button">Adicionar</button>

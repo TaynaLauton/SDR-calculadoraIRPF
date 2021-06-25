@@ -5,7 +5,6 @@
   text-decoration: none;
   box-sizing: border-box;
   font: inherit;
-  vertical-align: baseline;
 }
 
 html{
@@ -74,7 +73,6 @@ body, button, input, textarea{
 input, button, .button{
   border-radius: .8rem;
   height: 5rem;
-
 }
 
 button, .button {
